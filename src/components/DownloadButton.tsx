@@ -8,9 +8,7 @@ const myConfig = [
   { header: "이체일시", dataKeys: ["date"] },
   { header: "출금은행", dataKeys: ["bank"] },
   { header: "출금계좌", dataKeys: ["account"] },
-  { header: "입금은행", children: [{ header: "입금계좌번호", dataKeys: ["inBank", "inAccount"] }] },
-
-
+  { header: "입금은행", children:  [{ header: '입금계좌번호2', dataKeys: ['inBank', 'inAccount', ] }]  },
 ];
 
 const myData = [
