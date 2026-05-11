@@ -5,25 +5,16 @@ import { generateSmartExcel } from '../utils/excelGenerator11';
 
 import { data11 } from './data';
 const myConfig = [
-  {
-    header: "이체확인증",
-    children: [
-      { header: "이름", dataKeys: ["name"] },
-      { header: "금액", dataKeys: ["amount"] },
-      { header: "직책", dataKeys: ["position"] }
-    ]
-  }, {
-    header: "이체확인증",
-    children: [
-      { header: "이름", dataKeys: ["name"] },
-      { header: "금액", dataKeys: ["amount"] },
-      { header: "직책", dataKeys: ["position", "etc"] }
-    ]
-  }
+  { header: "이체일시", dataKeys: ["date"] },
+  { header: "출금은행", dataKeys: ["bank"] },
+  { header: "출금계좌", dataKeys: ["account"] },
+  { header: "입금은행", children: [{ header: "입금계좌번호", dataKeys: ["inBank", "inAccount"] }] },
+
+
 ];
 
 const myData = [
-  { name: "성현", position: "개발자", etc: "it", amount: 5000 },
+  { date: "오늘", bank: "국민은행", account: "123-456-789", inBank: "신한은행", inAccount: "987-654-321" },
 ];
 export default function DownloadButton() {
   const handleDownload = async () => {
