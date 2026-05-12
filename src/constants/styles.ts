@@ -15,6 +15,7 @@ export const EXCEL_STYLES: Record<string, ExcelStyle> = {
     }
   },
   TABLE_BODY: {
+    fill: { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFFFFFF' } },
     font: { name: '나눔고딕', size: 10 },
     alignment: { horizontal: 'center', vertical: 'middle' },
     border: {
@@ -23,6 +24,7 @@ export const EXCEL_STYLES: Record<string, ExcelStyle> = {
     }
   },
   TABLE_BODY_RIGHT: {
+    fill: { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFFFFFF' } },
     font: { name: '나눔고딕', size: 10 },
     alignment: { horizontal: 'right', vertical: 'middle' },
     numFmt: '#,##0 "원"',

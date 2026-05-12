@@ -1,0 +1,17 @@
+{
+  "construction": {
+    "payment": "기성금",
+    "contractor": "원청사",
+    "sites": "현장"
+  },
+  "finance": {
+    "payment": "입금액",
+    "contractor": "거래처",
+    "sites": "지점"
+  },
+  "default": {
+    "payment": "결제금액",
+    "contractor": "업체명",
+    "sites": "장소"
+  }
+}
