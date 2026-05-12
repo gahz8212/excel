@@ -7,7 +7,7 @@ interface IndustryState {
   term: keyof typeof term;
 }
 export const useIndustryStore = create<IndustryState>((set) => ({
-  industry: "construction",
+  industry: "finance",
   setIndustry: (industry) => set({ industry }),
   term: "finance",
 }));
